@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Semester {
     private String idSemester;
-    private List<Month> listMonths;
+    private List<Mes> listMes;
 
     public Semester() {}
 
@@ -12,9 +12,9 @@ public class Semester {
         this.idSemester = idSemester;
     }
 
-    public Semester(String idSemester, List<Month> listMonths) {
+    public Semester(String idSemester, List<Mes> listMes) {
         this.idSemester = idSemester;
-        this.listMonths = listMonths;
+        this.listMes = listMes;
     }
 
     public String getIdSemester() {
@@ -25,19 +25,19 @@ public class Semester {
         this.idSemester = idSemester;
     }
 
-    public List<Month> getListMonths() {
-        return listMonths;
+    public List<Mes> getListMes() {
+        return listMes;
     }
 
-    public void setListMonths(List<Month> listMonths) {
-        this.listMonths = listMonths;
+    public void setListMes(List<Mes> listMes) {
+        this.listMes = listMes;
     }
 
     @Override
     public String toString() {
         return "Semester{" +
                 "idSemester='" + idSemester + '\'' +
-                ", listMonths=" + listMonths +
+                ", listMonths=" + listMes +
                 '}';
     }
 }

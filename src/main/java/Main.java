@@ -6,7 +6,10 @@ public class Main {
 
         Principal principal = new Principal();
 
-        principal.principalMenu();
+      // principal.principalMenu();
+        principal.principalEmpleado();
+
+
 
 
     }
