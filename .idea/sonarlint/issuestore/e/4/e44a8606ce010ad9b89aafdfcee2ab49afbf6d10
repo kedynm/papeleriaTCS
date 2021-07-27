@@ -1,5 +1,4 @@
 
-0
-java:S1220""Move this file to a named package.
-X
-java:S2094"BRemove this empty class, write its code or make it an "interface".(àªÅö
+X	java:S125	"<This block of commented-out lines of code should be removed.(õâí™8é—­Ë®/
+7
+java:S1220""Move this file to a named package.8¯£Á«®/

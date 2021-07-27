@@ -1,6 +1,6 @@
 package models;
 
-public class Empleado extends Persona{
+public class Empleado extends Persona {
 
     private String celular;
     private String ciudad;
@@ -50,21 +50,24 @@ public class Empleado extends Persona{
         this.ingresoMensual = ingresoMensual;
     }
 
-    public Integer calcularIngresoTrimestral(Integer ingreso){
-        return ingreso*3;
+    public Integer calcularIngresoTrimestral(Integer ingreso) {
+        return ingreso * 3;
     }
-    public Integer calcularIngresoSemestral(Integer ingreso){
-        return ingreso*6;
+
+    public Integer calcularIngresoSemestral(Integer ingreso) {
+        return ingreso * 6;
     }
-    public Integer calcularIngresoAnual(Integer ingreso){
-        return ingreso*12;
+
+    public Integer calcularIngresoAnual(Integer ingreso) {
+        return ingreso * 12;
     }
-    public Double calcularImpuesto(Integer ingreso){
+
+    public Double calcularImpuesto(Integer ingreso) {
         double impuesto;
-        if(ingreso > 1500000){
-           impuesto = ingreso*2;
-        }else{
-            impuesto = ingreso*0.5;
+        if (ingreso > 1500000) {
+            impuesto = ingreso * 2;
+        } else {
+            impuesto = ingreso * 0.5;
         }
         return impuesto;
     }

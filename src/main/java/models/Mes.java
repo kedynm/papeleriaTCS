@@ -33,30 +33,30 @@ public class Mes {
         this.nombre = nombre;
     }
 
-    public Float gananciaFebrero(Float gananciasEnero) {
+    public Integer gananciaFebrero(Integer gananciasEnero) {
         return gananciasEnero / 2;
     }
 
-    public Float gananciaMarzo(Float gananciasEnero) {
+    public Integer gananciaMarzo(Integer gananciasEnero) {
         return gananciasEnero * 2;
     }
 
-    public Float gananciaAbril(Float gananciasEnero) {
-        return gananciaMarzo(gananciasEnero) * 0.8f;
+    public Double gananciaAbril(Integer gananciasEnero) {
+        return gananciaMarzo(gananciasEnero) * 0.8;
     }
 
-    public Float gananciasMayo(Float gananciasEnero) {
+    public Integer gananciasMayo(Integer gananciasEnero) {
         return (gananciaFebrero(gananciasEnero) + gananciaMarzo(gananciasEnero)) / 3;
     }
 
-    public Float gananciaJunio(Float gananciasEnero) {
+    public Double gananciaJunio(Integer gananciasEnero) {
         return (gananciasEnero +
                 gananciaFebrero(gananciasEnero) +
                 gananciaMarzo(gananciasEnero) +
                 gananciaAbril(gananciasEnero) +
                 gananciasMayo(gananciasEnero)) / 5;
     }
-    public Float gananciaSemestre(Float gananciasEnero) {
+    public Double gananciaSemestre(Integer gananciasEnero) {
         return gananciasEnero +
                 gananciaFebrero(gananciasEnero) +
                 gananciaMarzo(gananciasEnero) +
