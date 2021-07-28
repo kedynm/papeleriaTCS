@@ -10,7 +10,7 @@ import java.util.UUID;
 public class MenuAdmin {
     private String mensaje;
 
-    public void menuPpalAdmin() {
+    public void mostrarMenu() {
         String nombre;
         String apellido;
         int gananciaEnero;
@@ -36,15 +36,16 @@ public class MenuAdmin {
         Mes junio = new Mes(UUID.randomUUID().toString(), "Junio");
 
         this.mensaje = "***REPORTE DE GANANCIAS***\n\n" +
-                "Administrador: " + administrador.getNombre() + " " + administrador.getApellido() + "\n\n" +
+                "ADMINISTRADOR:  " + "\n" +
+                administrador.getNombre() + " " + administrador.getApellido() + "\n\n" +
                 "GANANCIAS POR MES:\n" +
-                mes.getNombre() + ":      " + administrador.getGananciaEnero() + "\n" +
-                febrero.getNombre() + ":  " + febrero.gananciaFebrero(gananciaEne) + "\n" +
-                marzo.getNombre() + ":    " + marzo.gananciaMarzo(gananciaEne) + "\n" +
-                abril.getNombre() + ":    " + abril.gananciaAbril(gananciaEne) + "\n" +
-                mayo.getNombre() + ":     " + mayo.gananciasMayo(gananciaEne) + "\n" +
-                junio.getNombre() + ":    " + junio.gananciaJunio(gananciaEne) + "\n\n" +
-                "GANANCIA POR SEMESTRE:" + "\n" +
+                mes.getNombre() + ":      $" + administrador.getGananciaEnero() + "\n" +
+                febrero.getNombre() + ":  $" + febrero.gananciaFebrero(gananciaEne) + "\n" +
+                marzo.getNombre() + ":     $" + marzo.gananciaMarzo(gananciaEne) + "\n" +
+                abril.getNombre() + ":        $" + abril.gananciaAbril(gananciaEne) + "\n" +
+                mayo.getNombre() + ":       $" + mayo.gananciasMayo(gananciaEne) + "\n" +
+                junio.getNombre() + ":       $" + junio.gananciaJunio(gananciaEne) + "\n\n" +
+                "GANANCIA POR SEMESTRE:  " + "\n$" +
                 mes.gananciaSemestre(gananciaEne);
 
         JOptionPane.showMessageDialog(null, this.mensaje);

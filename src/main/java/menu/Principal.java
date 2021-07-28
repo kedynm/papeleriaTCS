@@ -24,10 +24,10 @@ public class Principal {
             opcion = Integer.parseInt(JOptionPane.showInputDialog(mensaje));
             switch (opcion) {
                 case 1:
-                    menuAdmin.menuPpalAdmin();
+                    menuAdmin.mostrarMenu();
                     break;
                 case 2:
-                    menuEmpleado.menuEmpleado();
+                    menuEmpleado.mostrarMenu();
                     break;
                 case 3:
                     opcion = 0;

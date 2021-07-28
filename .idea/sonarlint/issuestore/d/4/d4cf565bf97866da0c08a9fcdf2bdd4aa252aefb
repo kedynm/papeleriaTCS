@@ -1,3 +1,8 @@
 
+x
+java:S1450"VRemove the "mensaje" field and declare it as a local variable in the relevant methods.(¿¾˜ÿúÿÿÿÿ8†˜¸Ì®/
 £
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Õ—Õÿÿÿÿÿ8¥½†¬®/
+java:S1186
+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Õ—Õÿÿÿÿÿ8¥½†¬®/
+r
+java:S1450"URemove the "opcion" field and declare it as a local variable in the relevant methods.(²á„º8áÍ³Ì®/

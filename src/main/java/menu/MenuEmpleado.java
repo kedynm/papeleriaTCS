@@ -8,7 +8,7 @@ import java.util.UUID;
 public class MenuEmpleado {
     private String mensaje;
 
-    public void menuEmpleado() {
+    public void mostrarMenu() {
         String nombre;
         String apellido;
         String celular;
@@ -32,14 +32,14 @@ public class MenuEmpleado {
 
         this.mensaje = "*** INFORME PAGO DE IMPUESTOS - PAPELERIA TCS ***\n\n" +
                 "Empleado:   " + empleado.getNombre() + " " + empleado.getApellido() + "\n" +
-                "Celular:    " + empleado.getCelular() + "\n" +
-                "Ciudad:     " + empleado.getCiudad() + "\n\n" +
-                "INGRESOS:\n " +
-                "Mensual:    " + empleado.getIngresoMensual() + "\n" +
-                "Trimestral: " + empleado.calcularIngresoTrimestral(empleado.getIngresoMensual()) + "\n" +
-                "Semestral:  " + empleado.calcularIngresoSemestral(empleado.getIngresoMensual()) + "\n" +
-                "Anual:      " + empleado.calcularIngresoAnual(empleado.getIngresoMensual()) + "\n\n" +
-                "TOTAL IMPUESTO A PAGAR: \t\t" + empleado.calcularImpuesto(empleado.getIngresoMensual());
+                "Celular:       " + empleado.getCelular() + "\n" +
+                "Ciudad:        " + empleado.getCiudad() + "\n\n" +
+                "INGRESOS:\n" +
+                "Mensual:      $" + empleado.getIngresoMensual() + "\n" +
+                "Trimestral:  $" + empleado.calcularIngresoTrimestral(empleado.getIngresoMensual()) + "\n" +
+                "Semestral:  $" + empleado.calcularIngresoSemestral(empleado.getIngresoMensual()) + "\n" +
+                "Anual:           $" + empleado.calcularIngresoAnual(empleado.getIngresoMensual()) + "\n\n" +
+                "TOTAL IMPUESTO A PAGAR:   $" + empleado.calcularImpuesto(empleado.getIngresoMensual());
 
         JOptionPane.showMessageDialog(null, this.mensaje);
     }
