@@ -14,4 +14,5 @@
 
 ### Diagrama de clases
 
-![Image text](https://github.com/kedynm/papeleriaTCS/blob/develop/DigramaClasesPapeleriaTCS.jpg)
+->![Image text](https://github.com/kedynm/papeleriaTCS/blob/develop/DigramaClasesPapeleriaTCS.jpg)<-
+
